@@ -15,8 +15,9 @@ Expected GitHub Pages URL:
 
 Before every App Store release, review the policy and App Store Connect privacy
 answers against the shipping application, all network requests, and every
-third-party SDK. The initial policy reflects the current App Store Connect
-declaration that the app does not collect data.
+third-party SDK. The policy currently reflects the App Store Connect declaration
+for device identifiers, product interaction and other usage data, and crash,
+performance, and other diagnostic data.
 
 ### Publishing note
 
