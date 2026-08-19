@@ -1,28 +1,105 @@
-# Helix Work
+<p align="center">
+  <img src="assets/helix-work-hero.png" alt="Helix Work — an AI workspace for macOS" width="100%">
+</p>
 
-This repository contains the Helix Work macOS application and its public-facing
-privacy policy.
+<h1 align="center">Helix Work</h1>
 
-## Privacy policy
+<p align="center">
+  An AI workbench that brings tasks, project files, tools, and finished artifacts together on macOS.
+</p>
 
-The static privacy policy is in [`docs/index.html`](docs/index.html). It is
-designed to be published with GitHub Pages without a build step, third-party
-scripts, cookies, analytics, or externally hosted assets.
+<p align="center">
+  <a href="https://github.com/Advai-X/advai-helix/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Advai-X/advai-helix?display_name=tag&sort=semver"></a>
+  <img alt="Platform: macOS" src="https://img.shields.io/badge/platform-macOS-111111?logo=apple">
+  <img alt="Architecture: Apple silicon" src="https://img.shields.io/badge/architecture-Apple%20silicon-0A7F83">
+</p>
 
-Expected GitHub Pages URL:
+Helix Work is a desktop workspace for getting substantial work done with AI. Start with a task, give Helix access to the tools and context it needs, follow the work as it happens, and review the resulting files without leaving the app.
 
-`https://advai-x.github.io/advai-helix/`
+> This is the public distribution and documentation repository for Helix Work. Application source code is not published here.
 
-Before every App Store release, review the policy and App Store Connect privacy
-answers against the shipping application, all network requests, and every
-third-party SDK. The policy currently reflects the App Store Connect declaration
-for device identifiers, product interaction and other usage data, and crash,
-performance, and other diagnostic data.
+## What you can do
 
-### Publishing note
+- Run AI-assisted tasks against a local project workspace.
+- Read, create, and revise documents, reports, presentations, code, and other artifacts.
+- Work with project files, an integrated terminal, browser-based research, and previews in one place.
+- Extend workflows with Skills, Plugins, and MCP-compatible integrations.
+- Connect leading AI providers and switch between state-of-the-art models for different tasks.
+- Review task progress and generated outputs before using or sharing them.
 
-GitHub Pages can publish from a public repository on GitHub Free. Publishing
-Pages from this private organization repository requires an eligible paid
-GitHub plan. Keep the source repository private unless its visibility has been
-reviewed and intentionally changed, or publish the policy from a separate
-public repository.
+The exact tools available to a task depend on your Helix configuration, installed integrations, selected model provider, and the permissions you grant.
+
+## Models and providers
+
+Helix is designed to work across the mainstream AI ecosystem instead of locking a workspace to one model vendor. It supports provider configurations for:
+
+- **OpenAI**, **Anthropic**, **Azure OpenAI**, and **Google Gemini**
+- **DeepSeek**, **Alibaba Cloud Model Studio (DashScope)**, **Moonshot**, **Z.AI**, and **Volcano Ark**
+- **OpenRouter** for access to models from multiple vendors
+- **Ollama** for locally served models
+- **Custom OpenAI-compatible endpoints**, including private or enterprise gateways
+
+Depending on the configured provider, Helix can use leading model families such as **GPT**, **Claude**, **Gemini**, **DeepSeek**, **Qwen**, **Kimi**, **GLM**, and **Grok**, alongside provider-specific and custom models. You can load models available to your account, add a model by its API ID, and select the model that best fits each workflow.
+
+Provider access, billing, regional availability, rate limits, and individual model capabilities are controlled by the respective provider. A model shown in Helix may still require an eligible account and API access from that provider.
+
+## Download
+
+### GitHub release
+
+Download the latest notarized macOS disk image from [GitHub Releases](https://github.com/Advai-X/advai-helix/releases/latest).
+
+The current GitHub build is for **Apple silicon (`arm64`)** Macs. Only packaged application builds are distributed through Releases; source archives automatically shown by GitHub are not Helix application source code.
+
+### Apple App Store
+
+The App Store edition is distributed separately through Apple and may become available at a different time or vary by region. Use GitHub Releases when you want the direct-download build.
+
+## Install from GitHub
+
+1. Download the `.dmg` file from the latest release.
+2. Open the disk image and drag **Helix** into **Applications**.
+3. Launch Helix from the Applications folder.
+
+The direct-download build is signed with an Apple Developer ID certificate and notarized by Apple. You can verify a downloaded file's checksum with:
+
+```bash
+shasum -a 256 Helix-Work-<version>-arm64.dmg
+```
+
+Compare the result with the SHA-256 value published in the corresponding release notes.
+
+## Privacy and data
+
+Helix Work collects limited device, product interaction, and diagnostic data to operate, maintain, and improve the app. It does not use that data for advertising or cross-app tracking, and it does not sell personal data.
+
+Tasks may send prompts, selected files, or other context to the AI providers and integrations you configure. Review their terms and privacy practices before sending sensitive information, and grant tools access only to the files and services needed for a task.
+
+Read the complete bilingual [Privacy Policy](https://advai-x.github.io/advai-helix/).
+
+## Releases and support
+
+- [Latest release](https://github.com/Advai-X/advai-helix/releases/latest)
+- [All releases](https://github.com/Advai-X/advai-helix/releases)
+- [Report a problem or request a feature](https://github.com/Advai-X/advai-helix/issues)
+- [Advai X on GitHub](https://github.com/Advai-X)
+
+When reporting a problem, include the Helix version, macOS version, Mac model or chip, and reproducible steps. Do not include API keys, private documents, credentials, or other sensitive data.
+
+---
+
+## 中文介绍
+
+Helix Work 是一款面向 macOS 的 AI 工作台，将任务、项目文件、终端、浏览器、扩展能力与最终产物集中在一个应用中。你可以从一个目标开始，让 Helix 在授权范围内调用所需工具，并在应用内跟踪过程、检查文件和预览结果。
+
+- 支持 OpenAI、Anthropic、Azure OpenAI、Google Gemini、DeepSeek、阿里云百炼（DashScope）、Moonshot、OpenRouter、Z.AI、火山方舟、Ollama，以及兼容 OpenAI 接口的自定义或企业网关。
+- 可使用 GPT、Claude、Gemini、DeepSeek、Qwen、Kimi、GLM、Grok 等主流前沿模型系列，并可从供应商读取账号可用模型或按 API Model ID 添加自定义模型。
+- GitHub 当前提供 Apple 芯片（`arm64`）直装版本。
+- 在 [Releases](https://github.com/Advai-X/advai-helix/releases/latest) 页面下载 `.dmg`，拖入“应用程序”文件夹即可安装。
+- GitHub Release 仅发布应用构建产物；本仓库不包含 Helix 应用源码。
+- App Store 版本由 Apple 渠道独立分发，上线时间和可用地区可能不同。
+- 使用前请阅读完整的中英文[隐私政策](https://advai-x.github.io/advai-helix/)。
+
+如需反馈问题，请提交 [GitHub Issue](https://github.com/Advai-X/advai-helix/issues)，并避免上传密钥、私人文档或其他敏感信息。
+
+具体模型是否可用取决于相应供应商的账号权限、地区、计费、限流和 API 开放情况。
