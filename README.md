@@ -34,31 +34,31 @@ The exact tools available to a task depend on your Helix configuration, installe
 <table>
   <tr>
     <td width="50%">
-      <img src="docs/images/helix-new-task.jpg" alt="Helix new task screen with ready-to-use work presets" width="100%">
+      <img src="docs/images/helix-promo-workspace.png" alt="Helix Work brings tasks, projects, code, tools, and plugins together" width="100%">
       <br><strong>Start with a goal</strong><br>
       Describe a task, select a project, or begin with a built-in workflow for research, data analysis, slides, or documents.
     </td>
     <td width="50%">
-      <img src="docs/images/helix-artifact-preview.jpg" alt="Helix execution record and generated report preview" width="100%">
+      <img src="docs/images/helix-promo-deliverables.png" alt="Helix Work creates, verifies, and previews finished deliverables" width="100%">
       <br><strong>Review the delivered work</strong><br>
       Inspect the execution record, tool activity, delivered files, and a rendered artifact before continuing or sharing it.
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="docs/images/helix-providers.jpg" alt="Helix AI provider catalog" width="100%">
+      <img src="docs/images/helix-promo-providers.png" alt="Helix Work provider configuration for cloud, local, and custom AI providers" width="100%">
       <br><strong>Choose your AI stack</strong><br>
       Configure leading cloud providers, local models, or an OpenAI-compatible enterprise gateway.
     </td>
     <td width="50%">
-      <img src="docs/images/helix-plugins.jpg" alt="Helix plugins and skills catalog" width="100%">
+      <img src="docs/images/helix-promo-plugins.png" alt="Helix Work plugin catalog for extending workflows" width="100%">
       <br><strong>Extend the workspace</strong><br>
       Add focused capabilities for code, research, data, productivity, content creation, and connected services.
     </td>
   </tr>
 </table>
 
-See the complete [Product Tour](docs/product-tour.md) for the end-to-end workflow and feature overview. Screenshots show Helix Work 0.1.3 with demonstration content.
+See the complete [Product Tour](docs/product-tour.md) for the end-to-end workflow and feature overview. Promotional images use demonstration content; exact UI details, model names, and availability may vary by version, provider, account, and region.
 
 ## Models and providers
 
