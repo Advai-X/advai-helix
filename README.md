@@ -10,8 +10,6 @@
 
 Helix Work is a desktop workspace for getting substantial work done with AI. Start with a task, give Helix access to the tools and context it needs, follow the work as it happens, and review the resulting files without leaving the app.
 
-> This is the public distribution and documentation repository for Helix Work. Application source code is not published here.
-
 ## What you can do
 
 - Run AI-assisted tasks against a local project workspace.
