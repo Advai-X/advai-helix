@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/helix-work-brand-hero.png" alt="Helix Work — an AI workspace for macOS" width="100%">
-</p>
-
 <h1 align="center">Helix Work</h1>
 
 <p align="center">
