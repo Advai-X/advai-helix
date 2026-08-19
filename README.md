@@ -1,17 +1,11 @@
-<h1 align="center">Helix Work</h1>
-
 <p align="center">
-  An AI workbench that brings tasks, project files, tools, and finished artifacts together on macOS.
+  <img src="assets/helix-work-feature-overview.png" alt="Helix Work — one workspace for goals, models, tools, and deliverables" width="100%">
 </p>
 
 <p align="center">
   <a href="https://github.com/Advai-X/advai-helix/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Advai-X/advai-helix?display_name=tag&sort=semver"></a>
   <img alt="Platform: macOS" src="https://img.shields.io/badge/platform-macOS-111111?logo=apple">
   <img alt="Architecture: Apple silicon" src="https://img.shields.io/badge/architecture-Apple%20silicon-0A7F83">
-</p>
-
-<p align="center">
-  <img src="assets/helix-work-feature-overview.png" alt="Helix Work — one workspace for goals, models, tools, and deliverables" width="100%">
 </p>
 
 Helix Work is a desktop workspace for getting substantial work done with AI. Start with a task, give Helix access to the tools and context it needs, follow the work as it happens, and review the resulting files without leaving the app.
