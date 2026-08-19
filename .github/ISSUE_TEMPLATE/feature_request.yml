@@ -1,0 +1,42 @@
+name: Feature request
+description: Suggest an improvement or a new workflow for Helix Work.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or job to be done
+      description: Describe the outcome you are trying to achieve and what blocks you today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Explain how you expect the workflow to behave from a user's perspective.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Product area
+      options:
+        - Tasks and projects
+        - Providers and models
+        - Plugins, Skills, or MCP
+        - Files and deliverables
+        - Browser or terminal
+        - Privacy, permissions, or storage
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Do not include credentials, private documents, or personal data.

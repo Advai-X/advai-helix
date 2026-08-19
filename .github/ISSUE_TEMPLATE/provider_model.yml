@@ -1,0 +1,60 @@
+name: Provider or model compatibility
+description: Report setup, discovery, or runtime compatibility with a provider or model.
+title: "[Provider/Model]: "
+labels: ["provider"]
+body:
+  - type: input
+    id: helix-version
+    attributes:
+      label: Helix Work version
+      placeholder: 0.1.3
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      placeholder: OpenAI, Anthropic, Ollama, custom gateway, etc.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model API ID
+      description: Use the actual API model identifier, not an API key.
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      options:
+        - Provider setup
+        - Authentication without sharing credentials
+        - Model discovery
+        - Model selection
+        - Request compatibility
+        - Tool or multimodal capability
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Include reproducible steps and the exact redacted error response.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I did not include an API key, access token, endpoint credential, or private data.
+          required: true

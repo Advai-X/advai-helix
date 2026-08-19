@@ -1,0 +1,83 @@
+name: Bug report
+description: Report reproducible unexpected behavior in Helix Work.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Helix Work. Do not include API keys, credentials, private documents, customer data, or other sensitive information.
+  - type: input
+    id: helix-version
+    attributes:
+      label: Helix Work version
+      placeholder: 0.1.3
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: macOS 15.6
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Mac model or chip
+      placeholder: MacBook Pro, Apple M3 Pro
+    validations:
+      required: true
+  - type: dropdown
+    id: install-channel
+    attributes:
+      label: Installation channel
+      options:
+        - GitHub Release
+        - Apple App Store
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: provider-model
+    attributes:
+      label: Provider and model
+      description: Leave blank if the problem is unrelated to a model request.
+      placeholder: Anthropic / Claude model API ID
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Run ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the exact error text when available.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add redacted screenshots or logs only when they are safe to publish.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I tested the latest available Helix Work release.
+          required: true
+        - label: I removed API keys, credentials, private documents, and personal data.
+          required: true
