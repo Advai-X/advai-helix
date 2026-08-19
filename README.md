@@ -24,10 +24,24 @@ Helix Work is a desktop workspace for getting substantial work done with AI. Sta
 - Read, create, and revise documents, reports, presentations, code, and other artifacts.
 - Work with project files, an integrated terminal, browser-based research, and previews in one place.
 - Extend workflows with Skills, Plugins, and MCP-compatible integrations.
-- Choose and configure supported AI model providers for different tasks.
+- Connect leading AI providers and switch between state-of-the-art models for different tasks.
 - Review task progress and generated outputs before using or sharing them.
 
 The exact tools available to a task depend on your Helix configuration, installed integrations, selected model provider, and the permissions you grant.
+
+## Models and providers
+
+Helix is designed to work across the mainstream AI ecosystem instead of locking a workspace to one model vendor. It supports provider configurations for:
+
+- **OpenAI**, **Anthropic**, **Azure OpenAI**, and **Google Gemini**
+- **DeepSeek**, **Alibaba Cloud Model Studio (DashScope)**, **Moonshot**, **Z.AI**, and **Volcano Ark**
+- **OpenRouter** for access to models from multiple vendors
+- **Ollama** for locally served models
+- **Custom OpenAI-compatible endpoints**, including private or enterprise gateways
+
+Depending on the configured provider, Helix can use leading model families such as **GPT**, **Claude**, **Gemini**, **DeepSeek**, **Qwen**, **Kimi**, **GLM**, and **Grok**, alongside provider-specific and custom models. You can load models available to your account, add a model by its API ID, and select the model that best fits each workflow.
+
+Provider access, billing, regional availability, rate limits, and individual model capabilities are controlled by the respective provider. A model shown in Helix may still require an eligible account and API access from that provider.
 
 ## Download
 
@@ -78,6 +92,8 @@ When reporting a problem, include the Helix version, macOS version, Mac model or
 
 Helix Work 是一款面向 macOS 的 AI 工作台，将任务、项目文件、终端、浏览器、扩展能力与最终产物集中在一个应用中。你可以从一个目标开始，让 Helix 在授权范围内调用所需工具，并在应用内跟踪过程、检查文件和预览结果。
 
+- 支持 OpenAI、Anthropic、Azure OpenAI、Google Gemini、DeepSeek、阿里云百炼（DashScope）、Moonshot、OpenRouter、Z.AI、火山方舟、Ollama，以及兼容 OpenAI 接口的自定义或企业网关。
+- 可使用 GPT、Claude、Gemini、DeepSeek、Qwen、Kimi、GLM、Grok 等主流前沿模型系列，并可从供应商读取账号可用模型或按 API Model ID 添加自定义模型。
 - GitHub 当前提供 Apple 芯片（`arm64`）直装版本。
 - 在 [Releases](https://github.com/Advai-X/advai-helix/releases/latest) 页面下载 `.dmg`，拖入“应用程序”文件夹即可安装。
 - GitHub Release 仅发布应用构建产物；本仓库不包含 Helix 应用源码。
@@ -85,3 +101,5 @@ Helix Work 是一款面向 macOS 的 AI 工作台，将任务、项目文件、�
 - 使用前请阅读完整的中英文[隐私政策](https://advai-x.github.io/advai-helix/)。
 
 如需反馈问题，请提交 [GitHub Issue](https://github.com/Advai-X/advai-helix/issues)，并避免上传密钥、私人文档或其他敏感信息。
+
+具体模型是否可用取决于相应供应商的账号权限、地区、计费、限流和 API 开放情况。
