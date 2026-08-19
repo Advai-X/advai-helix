@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/Advai-X/advai-helix/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Advai-X/advai-helix?display_name=tag&sort=semver"></a>
   <img alt="Platform: macOS" src="https://img.shields.io/badge/platform-macOS-111111?logo=apple">
-  <img alt="Architecture: Apple silicon" src="https://img.shields.io/badge/architecture-Apple%20silicon-0A7F83">
+  <img alt="Architecture: Universal" src="https://img.shields.io/badge/architecture-Universal-0A7F83">
 </p>
 
 Helix Work is a desktop workspace for getting substantial work done with AI. Start with a task, give Helix access to the tools and context it needs, follow the work as it happens, and review the resulting files without leaving the app.
@@ -72,7 +72,7 @@ Provider access, billing, regional availability, rate limits, and individual mod
 
 Download the latest notarized macOS disk image from [GitHub Releases](https://github.com/Advai-X/advai-helix/releases/latest).
 
-The current GitHub build is for **Apple silicon (`arm64`)** Macs. Only packaged application builds are distributed through Releases; source archives automatically shown by GitHub are not Helix application source code.
+The current GitHub build is a **Universal** macOS application for both **Apple silicon (`arm64`)** and **Intel (`x86_64`)** Macs. It requires **macOS 12 or later**. Only packaged application builds are distributed through Releases; source archives automatically shown by GitHub are not Helix application source code.
 
 ### Apple App Store
 
@@ -87,7 +87,7 @@ The App Store edition is distributed separately through Apple and may become ava
 The direct-download build is signed with an Apple Developer ID certificate and notarized by Apple. You can verify a downloaded file's checksum with:
 
 ```bash
-shasum -a 256 Helix-Work-<version>-arm64.dmg
+shasum -a 256 Helix-Work-<version>-universal.dmg
 ```
 
 Compare the result with the SHA-256 value published in the corresponding release notes.
@@ -117,7 +117,7 @@ Helix Work 是一款面向 macOS 的 AI 工作台，将任务、项目文件、�
 
 - 支持 OpenAI、Anthropic、Azure OpenAI、Google Gemini、DeepSeek、阿里云百炼（DashScope）、Moonshot、OpenRouter、Z.AI、火山方舟、Ollama，以及兼容 OpenAI 接口的自定义或企业网关。
 - 可使用 GPT、Claude、Gemini、DeepSeek、Qwen、Kimi、GLM、Grok 等主流前沿模型系列，并可从供应商读取账号可用模型或按 API Model ID 添加自定义模型。
-- GitHub 当前提供 Apple 芯片（`arm64`）直装版本。
+- GitHub 当前提供 Universal 直装版本，同时支持 Apple 芯片（`arm64`）和 Intel（`x86_64`）Mac，要求 macOS 12 或更高版本。
 - 在 [Releases](https://github.com/Advai-X/advai-helix/releases/latest) 页面下载 `.dmg`，拖入“应用程序”文件夹即可安装。
 - GitHub Release 仅发布应用构建产物；本仓库不包含 Helix 应用源码。
 - App Store 版本由 Apple 渠道独立分发，上线时间和可用地区可能不同。
