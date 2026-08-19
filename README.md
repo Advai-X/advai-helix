@@ -29,6 +29,37 @@ Helix Work is a desktop workspace for getting substantial work done with AI. Sta
 
 The exact tools available to a task depend on your Helix configuration, installed integrations, selected model provider, and the permissions you grant.
 
+## Helix in action
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="docs/images/helix-new-task.jpg" alt="Helix new task screen with ready-to-use work presets" width="100%">
+      <br><strong>Start with a goal</strong><br>
+      Describe a task, select a project, or begin with a built-in workflow for research, data analysis, slides, or documents.
+    </td>
+    <td width="50%">
+      <img src="docs/images/helix-artifact-preview.jpg" alt="Helix execution record and generated report preview" width="100%">
+      <br><strong>Review the delivered work</strong><br>
+      Inspect the execution record, tool activity, delivered files, and a rendered artifact before continuing or sharing it.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="docs/images/helix-providers.jpg" alt="Helix AI provider catalog" width="100%">
+      <br><strong>Choose your AI stack</strong><br>
+      Configure leading cloud providers, local models, or an OpenAI-compatible enterprise gateway.
+    </td>
+    <td width="50%">
+      <img src="docs/images/helix-plugins.jpg" alt="Helix plugins and skills catalog" width="100%">
+      <br><strong>Extend the workspace</strong><br>
+      Add focused capabilities for code, research, data, productivity, content creation, and connected services.
+    </td>
+  </tr>
+</table>
+
+See the complete [Product Tour](docs/product-tour.md) for the end-to-end workflow and feature overview. Screenshots show Helix Work 0.1.3 with demonstration content.
+
 ## Models and providers
 
 Helix is designed to work across the mainstream AI ecosystem instead of locking a workspace to one model vendor. It supports provider configurations for:
@@ -98,6 +129,7 @@ Helix Work 是一款面向 macOS 的 AI 工作台，将任务、项目文件、�
 - 在 [Releases](https://github.com/Advai-X/advai-helix/releases/latest) 页面下载 `.dmg`，拖入“应用程序”文件夹即可安装。
 - GitHub Release 仅发布应用构建产物；本仓库不包含 Helix 应用源码。
 - App Store 版本由 Apple 渠道独立分发，上线时间和可用地区可能不同。
+- 可通过[产品导览](docs/product-tour.md)查看真实界面、完整工作流程和主要功能。
 - 使用前请阅读完整的中英文[隐私政策](https://advai-x.github.io/advai-helix/)。
 
 如需反馈问题，请提交 [GitHub Issue](https://github.com/Advai-X/advai-helix/issues)，并避免上传密钥、私人文档或其他敏感信息。
