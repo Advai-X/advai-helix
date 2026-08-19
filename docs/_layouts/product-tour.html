@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description }}">
+  <link rel="canonical" href="https://advai-x.github.io/advai-helix/product-tour.html">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://advai-x.github.io/advai-helix/product-tour.html">
+  <meta property="og:image" content="https://advai-x.github.io/advai-helix/images/helix-promo-deliverables.png">
+  <meta name="theme-color" content="#071b22">
+  <title>{{ page.title }} — Helix Work</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #06171d;
+      --surface: #0b242c;
+      --text: #f1fbfc;
+      --muted: #a8c6ca;
+      --line: rgba(151, 226, 234, 0.18);
+      --accent: #76e2ea;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -12rem, rgba(55, 186, 202, 0.24), transparent 34rem),
+        linear-gradient(180deg, #071b22 0%, var(--bg) 48%, #040f13 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    nav, main, footer { width: min(920px, calc(100% - 40px)); margin: 0 auto; }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      border-bottom: 1px solid var(--line);
+    }
+    nav a { color: var(--text); font-weight: 700; text-decoration: none; }
+    nav .links { display: flex; gap: 20px; font-size: 14px; }
+    nav .links a { color: var(--muted); font-weight: 600; }
+
+    main { padding: 68px 0 88px; }
+    h1, h2, h3 { line-height: 1.16; letter-spacing: -0.035em; }
+    h1 { margin: 0 0 24px; font-size: clamp(42px, 7vw, 72px); }
+    h2 { margin: 72px 0 20px; padding-top: 8px; font-size: clamp(28px, 4vw, 40px); }
+    h3 { margin-top: 36px; font-size: 23px; }
+    p, li { color: var(--muted); font-size: 17px; }
+    strong { color: var(--text); }
+    blockquote {
+      margin: 28px 0;
+      padding: 10px 20px;
+      border-left: 3px solid var(--accent);
+      background: rgba(255, 255, 255, 0.025);
+    }
+    blockquote p { margin: 0; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 30px 0;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.25);
+    }
+    hr { margin: 72px 0; border: 0; border-top: 1px solid var(--line); }
+    code { padding: 0.15em 0.35em; border-radius: 5px; background: rgba(255,255,255,0.08); }
+    footer { padding: 28px 0 42px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+
+    @media (max-width: 640px) {
+      nav .links a:first-child { display: none; }
+      main { padding-top: 48px; }
+      h2 { margin-top: 56px; }
+      p, li { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="https://advai-x.github.io/advai-helix/product/">Helix Work</a>
+    <div class="links">
+      <a href="https://github.com/Advai-X/advai-helix">GitHub</a>
+      <a href="https://github.com/Advai-X/advai-helix/releases/latest">Download</a>
+    </div>
+  </nav>
+  <main>
+    {{ content }}
+  </main>
+  <footer>Helix Work · Built by Advai X</footer>
+</body>
+</html>
