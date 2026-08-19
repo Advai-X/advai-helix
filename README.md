@@ -53,7 +53,7 @@ The exact tools available to a task depend on your Helix configuration, installe
     <td width="50%">
       <img src="docs/images/helix-promo-plugins.png" alt="Helix Work plugin catalog for extending workflows" width="100%">
       <br><strong>Extend the workspace</strong><br>
-      Add focused capabilities for code, research, data, productivity, content creation, and connected services.
+      Add focused capabilities for code, research, data, content, and connected services.
     </td>
   </tr>
 </table>
