@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/Advai-X/advai-helix/security/advisories/new
+    about: Report vulnerabilities privately instead of opening a public issue.
+  - name: Product tour and documentation
+    url: https://github.com/Advai-X/advai-helix/blob/main/docs/product-tour.md
+    about: Review the supported workflow, providers, models, plugins, and deliverables.

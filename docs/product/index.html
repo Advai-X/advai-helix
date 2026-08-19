@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Helix Work is a model-neutral AI workspace for macOS with multi-provider models, extensible tools, and inspectable deliverables.">
+  <meta property="og:title" content="Helix Work — Your models. Your tools. Finished work.">
+  <meta property="og:description" content="A model-neutral AI workspace for macOS with multi-provider models, extensible tools, and inspectable deliverables.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://advai-x.github.io/advai-helix/images/helix-promo-deliverables.png">
+  <meta name="theme-color" content="#071b22">
+  <title>Helix Work — Model-neutral AI workspace for macOS</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #06171d;
+      --surface: #0b242c;
+      --surface-2: #0f3039;
+      --text: #f1fbfc;
+      --muted: #a8c6ca;
+      --line: rgba(151, 226, 234, 0.18);
+      --accent: #53d8e5;
+      --accent-strong: #8cebf2;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -10%, rgba(55, 186, 202, 0.28), transparent 34rem),
+        linear-gradient(180deg, #071b22 0%, var(--bg) 52%, #040f13 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand { font-size: 18px; font-weight: 750; letter-spacing: -0.02em; text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 22px; color: var(--muted); font-size: 14px; }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--text); }
+
+    .hero { padding: clamp(72px, 10vw, 124px) 0 70px; text-align: center; }
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--accent-strong);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0 auto;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 28px auto 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2.2vw, 23px);
+      line-height: 1.55;
+    }
+
+    .actions { display: flex; justify-content: center; gap: 12px; margin-top: 34px; flex-wrap: wrap; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button.primary { border-color: transparent; background: var(--accent); color: #032127; }
+    .button:hover { transform: translateY(-1px); }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      margin-top: 58px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 36px 90px rgba(0,0,0,0.36);
+    }
+
+    section { padding: 88px 0; }
+    .section-head { max-width: 720px; margin-bottom: 42px; }
+    h2 { margin: 0; font-size: clamp(34px, 5vw, 58px); line-height: 1.04; letter-spacing: -0.045em; }
+    .section-head p { margin: 18px 0 0; color: var(--muted); font-size: 18px; line-height: 1.6; }
+
+    .feature {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: clamp(28px, 6vw, 76px);
+      align-items: center;
+      padding: 34px 0;
+    }
+    .feature + .feature { border-top: 1px solid var(--line); margin-top: 34px; padding-top: 68px; }
+    .feature.reverse img { order: 2; }
+    .feature img { width: 100%; border: 1px solid var(--line); border-radius: 16px; }
+    .feature h3 { margin: 0; font-size: clamp(27px, 3.6vw, 42px); letter-spacing: -0.035em; }
+    .feature p { margin: 16px 0 0; color: var(--muted); font-size: 17px; line-height: 1.65; }
+
+    .models {
+      padding: 54px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(20,70,80,0.65), rgba(7,29,35,0.72));
+    }
+    .model-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .model-list span { padding: 9px 13px; border: 1px solid var(--line); border-radius: 999px; color: #d6f3f5; }
+
+    .closing { text-align: center; border-top: 1px solid var(--line); }
+    .closing p { max-width: 650px; margin: 20px auto 0; color: var(--muted); font-size: 18px; line-height: 1.6; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 34px 0 46px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer div { display: flex; flex-wrap: wrap; gap: 18px; }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 760px) {
+      .nav-links a:not(.download) { display: none; }
+      .feature { grid-template-columns: 1fr; }
+      .feature.reverse img { order: 0; }
+      .models { padding: 30px; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="#top">Helix Work</a>
+      <div class="nav-links">
+        <a href="#workflow">Workflow</a>
+        <a href="#models">Models</a>
+        <a href="../product-tour.html">Product tour</a>
+        <a class="download" href="https://github.com/Advai-X/advai-helix/releases/latest">Download</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <p class="eyebrow">Model-neutral AI workspace for macOS</p>
+      <h1>Your models. Your tools. Finished work.</h1>
+      <p class="lede">Helix Work brings tasks, project context, extensible tools, and inspectable deliverables into one focused desktop workspace.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/Advai-X/advai-helix/releases/latest">Download for Apple silicon</a>
+        <a class="button" href="https://github.com/Advai-X/advai-helix">View on GitHub</a>
+      </div>
+      <img class="hero-image" src="../images/helix-promo-deliverables.png" alt="Helix Work showing an AI task, its execution record, and a finished report preview">
+    </div>
+
+    <section class="wrap" id="workflow">
+      <div class="section-head">
+        <h2>From a goal to a deliverable.</h2>
+        <p>Start with the outcome you need. Give the task a project, model, and approved capabilities, then inspect the work and resulting files in one place.</p>
+      </div>
+
+      <article class="feature">
+        <img src="../images/helix-promo-workspace.png" alt="Helix Work task and project workspace">
+        <div>
+          <h3>One workspace for real work</h3>
+          <p>Research a market, analyze data, create a document or presentation, or work on code without separating the conversation from project files, tools, and previews.</p>
+        </div>
+      </article>
+
+      <article class="feature reverse">
+        <img src="../images/helix-promo-plugins.png" alt="Helix Work plugin catalog">
+        <div>
+          <h3>Extend the workflow</h3>
+          <p>Add focused capabilities through Plugins, Skills, and MCP-compatible integrations for code, research, data, content, browser workflows, and connected services.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap" id="models">
+      <div class="models">
+        <p class="eyebrow">Choose your AI stack</p>
+        <h2>Use the model that fits the task.</h2>
+        <p class="lede" style="margin-left:0; margin-right:0;">Connect cloud providers, locally served models, OpenRouter, or a compatible enterprise gateway. Availability depends on your provider account and region.</p>
+        <div class="model-list" aria-label="Supported model families">
+          <span>GPT</span><span>Claude</span><span>Gemini</span><span>DeepSeek</span><span>Qwen</span><span>Kimi</span><span>GLM</span><span>Grok</span><span>Ollama</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap closing">
+      <h2>Review the outcome, not just the answer.</h2>
+      <p>Follow execution, inspect tool activity, open generated files, and preview supported artifacts before you continue or share the result.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/Advai-X/advai-helix/releases/latest">Get Helix Work</a>
+        <a class="button" href="../product-tour.html">Explore the product tour</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span>© 2026 Advai X</span>
+    <div>
+      <a href="../">Privacy</a>
+      <a href="https://github.com/Advai-X/advai-helix/blob/main/SUPPORT.md">Support</a>
+      <a href="https://github.com/Advai-X/advai-helix/security">Security</a>
+      <a href="https://github.com/Advai-X/advai-helix/releases">Releases</a>
+    </div>
+  </footer>
+</body>
+</html>
