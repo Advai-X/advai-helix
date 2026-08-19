@@ -2,7 +2,7 @@
 
 ## Get the latest version
 
-Download the current Apple silicon build from [GitHub Releases](https://github.com/Advai-X/advai-helix/releases/latest). The direct-download build is signed and notarized for macOS.
+Download the current Universal build for Apple silicon and Intel Macs from [GitHub Releases](https://github.com/Advai-X/advai-helix/releases/latest). The direct-download build requires macOS 12 or later and is signed and notarized for macOS.
 
 ## Before opening an issue
 
