@@ -1,3 +1,10 @@
+---
+layout: product-tour
+title: Helix Work Product Tour
+description: Explore the Helix Work workflow, AI providers and models, plugins, local data controls, and inspectable deliverables.
+permalink: /product-tour.html
+---
+
 # Helix Work Product Tour
 
 Helix Work is a macOS AI workbench built around a complete work cycle: define a goal, provide project context, let an agent use approved tools, follow the execution, and review the delivered artifacts.
