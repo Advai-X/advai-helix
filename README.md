@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/helix-work-hero.png" alt="Helix Work — an AI workspace for macOS" width="100%">
+  <img src="assets/helix-work-feature-overview.png" alt="Helix Work — one workspace for goals, models, tools, and deliverables" width="100%">
 </p>
 
 <h1 align="center">Helix Work</h1>
