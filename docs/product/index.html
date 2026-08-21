@@ -10,6 +10,7 @@
   <meta property="og:image" content="https://advai-x.github.io/advai-helix/images/helix-promo-deliverables.png">
   <meta name="theme-color" content="#071b22">
   <title>Helix Work — Model-neutral AI workspace for macOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
   <style>
     :root {
       color-scheme: dark;
@@ -93,6 +94,39 @@
     }
     .button.primary { border-color: transparent; background: var(--accent); color: #032127; }
     .button:hover { transform: translateY(-1px); }
+    .hero-actions {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      width: min(100%, 660px);
+      margin-right: auto;
+      margin-left: auto;
+      gap: 0;
+      overflow: hidden;
+      border: 1px solid rgba(151,226,234,0.18);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.025);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.035), 0 14px 34px rgba(0,0,0,0.12);
+    }
+    .hero-actions .button {
+      width: auto;
+      min-height: 64px;
+      padding: 0 24px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+    .hero-actions .button + .button { border-left: 1px solid rgba(151,226,234,0.14); }
+    .hero-actions .button:hover { transform: none; background: rgba(255,255,255,0.045); }
+    .hero-actions .app-store-button { background: rgba(255,255,255,0.025); color: var(--text); }
+    .hero-actions .button-icon {
+      width: 24px;
+      margin-right: 12px;
+      flex: 0 0 24px;
+      color: #9bbfc5;
+      font-size: 22px;
+      line-height: 1;
+      text-align: center;
+    }
 
     .hero-image {
       display: block;
@@ -154,6 +188,12 @@
       footer { flex-direction: column; }
     }
 
+    @media (max-width: 560px) {
+      .hero-actions { grid-template-columns: 1fr; width: min(100%, 320px); }
+      .hero-actions .button { min-height: 56px; }
+      .hero-actions .button + .button { border-top: 1px solid rgba(151,226,234,0.14); border-left: 0; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .button:hover { transform: none; }
@@ -168,7 +208,8 @@
         <a href="#workflow">Workflow</a>
         <a href="#models">Models</a>
         <a href="../product-tour.html">Product tour</a>
-        <a class="download" href="https://github.com/Advai-X/advai-helix/releases/latest">Download</a>
+        <a href="https://github.com/Advai-X/advai-helix/releases/latest">Direct download</a>
+        <a class="download" href="https://apps.apple.com/us/app/helix-work/id6792973944">App Store</a>
       </div>
     </nav>
   </header>
@@ -178,9 +219,19 @@
       <p class="eyebrow">Model-neutral AI workspace for macOS</p>
       <h1>Your models. Your tools. Finished work.</h1>
       <p class="lede">Helix Work brings tasks, project context, extensible tools, and inspectable deliverables into one focused desktop workspace.</p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/Advai-X/advai-helix/releases/latest">Download for macOS</a>
-        <a class="button" href="https://github.com/Advai-X/advai-helix">View on GitHub</a>
+      <div class="actions hero-actions" aria-label="Download options">
+        <a class="button app-store-button" href="https://apps.apple.com/us/app/helix-work/id6792973944">
+          <i class="button-icon fa-brands fa-app-store-ios" aria-hidden="true"></i>
+          App Store
+        </a>
+        <a class="button" href="https://github.com/Advai-X/advai-helix/releases/latest">
+          <i class="button-icon fa-solid fa-download" aria-hidden="true"></i>
+          Direct download
+        </a>
+        <a class="button" href="https://github.com/Advai-X/advai-helix">
+          <i class="button-icon fa-brands fa-github" aria-hidden="true"></i>
+          View on GitHub
+        </a>
       </div>
       <img class="hero-image" src="../images/helix-promo-deliverables.png" alt="Helix Work showing an AI task, its execution record, and a finished report preview">
     </div>
@@ -223,7 +274,8 @@
       <h2>Review the outcome, not just the answer.</h2>
       <p>Follow execution, inspect tool activity, open generated files, and preview supported artifacts before you continue or share the result.</p>
       <div class="actions">
-        <a class="button primary" href="https://github.com/Advai-X/advai-helix/releases/latest">Get Helix Work</a>
+        <a class="button primary" href="https://apps.apple.com/us/app/helix-work/id6792973944">Get Helix Work</a>
+        <a class="button" href="https://github.com/Advai-X/advai-helix/releases/latest">Direct download</a>
         <a class="button" href="../product-tour.html">Explore the product tour</a>
       </div>
     </section>
